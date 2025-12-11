@@ -239,3 +239,232 @@ footer {
     font-size: 0.8rem;
     padding-bottom: 3rem;
 }
+
+
+/* ============================
+   MOBILE RESPONSIVE FIX
+   ============================ */
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .body-1 {
+        display: none; /* Phone image useless on mobile, ditch it */
+    }
+
+    .body-2 {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+    }
+
+    .login {
+        width: 100%;
+        border: 1px solid #ddd;
+        padding-bottom: 1rem;
+    }
+
+    #username,
+    #password,
+    #login-btn {
+        width: 100% !important;
+        font-size: 1rem;
+    }
+
+    .or hr {
+        width: 30% !important;
+    }
+
+    .sign-up-box {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .get-the-app-images {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .google-play,
+    .microsoft {
+        height: 2.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-1,
+    .footer-2 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+
+/* For very small screens (pure mobile hell) */
+@media (max-width: 480px) {
+    #instagram-logo {
+        height: 2.5rem;
+    }
+
+    .login {
+        padding: 1rem 0.5rem;
+    }
+
+    #username,
+    #password {
+        padding: 0.7rem;
+    }
+
+    .facebook-box p {
+        font-size: 0.75rem;
+    }
+
+    .get-the-app {
+        padding: 1rem 0;
+    }
+}
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.main-body {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+/* DESKTOP PHONE IMAGE */
+.body-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#phone {
+    width: 100%;
+    max-height: 37rem;
+    object-fit: contain;
+}
+
+/* RIGHT SIDE CONTENT */
+.body-2 {
+    width: 50%;
+}
+
+/* LOGIN CONTAINER */
+.login {
+    width: 100%;
+    padding: 1rem 0;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.textfield input {
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+}
+
+#login-btn {
+    width: 90%;
+    height: 2.3rem;
+    background: rgb(77, 167, 252);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+/* --- MOBILE FIRST --- */
+@media (max-width: 768px) {
+    
+    .main-body {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    /* hide phone mockup completely */
+    .body-1 {
+        display: none;
+    }
+
+    .body-2 {
+        width: 100%;
+    }
+
+    .login {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    .textfield input,
+    #login-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .or hr {
+        width: 30%;
+    }
+
+    .sign-up-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .get-the-app-images {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-1,
+    .footer-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.75rem;
+    }
+}
+
+/* SMALL MOBILE <480px */
+@media (max-width: 480px) {
+
+    #instagram-logo {
+        height: 2.2rem;
+    }
+
+    .textfield input {
+        padding: 0.8rem;
+    }
+
+    .facebook-box p {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "instagram-login",
+  "version": "1.0.0",
+  "description": "Instagram login page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
